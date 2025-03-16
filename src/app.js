@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 const corsOptions = {
   credentials: true,
-  origin: ['http://localhost:3000', 'http://localhost:80'] // İzin vermek istediğiniz alanları beyaz listeye alın
+  origin: ['http://localhost:3000', 'http://localhost:80'] 
 };
 
 app.use(cors(corsOptions));

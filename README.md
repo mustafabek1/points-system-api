@@ -1,11 +1,11 @@
-# backend-case
+# points-system-api
 
 This project is a simple Node.js application that manages user points. It provides endpoints to retrieve, add, and use points, as well as to get a list of all users and their points.
 
 ## Project Structure
 
 ```
-backend-case
+points-system-api
 ├── src
 │   ├── app.js
 │   ├── controllers
@@ -23,12 +23,12 @@ backend-case
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/backend-case.git
+   git clone https://github.com/mustafbek1/points-system-api.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd backend-case
+   cd points-system-api
    ```
 
 3. Install the dependencies:
@@ -43,7 +43,7 @@ backend-case
    node src/app.js
    ```
 
-2. The application will run on `http://localhost:3000`.
+2. The application will run on `http://localhost:3001`.
 
 ## Endpoints
 
