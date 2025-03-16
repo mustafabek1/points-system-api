@@ -6,7 +6,6 @@ const router = express.Router();
 const pointsModel = new PointsModel();
 const pointsController = new PointsController(pointsModel);
 
-
 // Middleware to check userId
 const checkUserId = (req, res, next) => {
     const userId = req.params.userId;
@@ -16,9 +15,9 @@ const checkUserId = (req, res, next) => {
     next();
 };
 
-router.get('/userId', checkUserId, pointsController.getPoints.bind(pointsController));
-router.post('/userId/use', checkUserId,  pointsController.usePoints.bind(pointsController));
-router.post('/userId/add', checkUserId, pointsController.addPoints.bind(pointsController));
-router.get('/all', checkUserId, pointsController.getAllPoints.bind(pointsController));
+router.get('/points/:userId', checkUserId, pointsController.getPoints.bind(pointsController));
+router.post('/points/:userId/use', checkUserId, pointsController.usePoints.bind(pointsController));
+router.post('/points/:userId/add', checkUserId, pointsController.addPoints.bind(pointsController));
+router.get('/points/all', pointsController.getAllPoints.bind(pointsController));
 
 module.exports = router;
